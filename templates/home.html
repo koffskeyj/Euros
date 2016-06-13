@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <h2>Welcome to the Euros!</h2>
+    <div class="Container">
+    It is time again for the UEFA European Championship, one of my favorite
+     events in all of sports. LET'S DO THIS! Okay, reeling it in.
+    The UEFA European Championship, also known as the Euros, is an international
+    competition in which certain qualifying countries on the
+    continent of Europe come together once every four years to compete for the
+    highest honor in European international soccer. Who will be the victor in the
+    15th edition of this classic competition? Well... before we get into the
+    competitive spirit, let's take a little ride on the Education Express.
+    In honor of the participating nations, here is a small infographic for
+    each.<a href="{% url 'detailed_info_view' %}">...(click)</a>
+    </div>
+{% endblock %}
+</body>
+</html>

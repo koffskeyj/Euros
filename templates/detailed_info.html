@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detailed Info</title>
+</head>
+    <h1>Participating Nations:</h1>
+<body>
+    <div class="panel panel-success">
+  <div class="panel-heading">Nations</div>
+  <div class="panel-body">
+    <p></p>
+  </div>
+  <table class="table">
+    <tr>
+    <th>Name</th>
+    <th>Capital</th>
+    <th>Government</th>
+    <th>Currency</th>
+    <th>Population</th>
+    <th>Language</th>
+    </tr>
+    {% for nation in nations %}
+        <tr>
+         <td>{{ nation.name }}</td>
+         <td>{{ nation.Capital }}</td>
+         <td>{{ nation.government }}</td>
+         <td>{{ nation.currency }}</td>
+         <td>{{ nation.population }}</td>
+         <td>{{ nation.language }}</td>
+        </tr>
+    {% endfor %}
+{% endblock %}
+  </table>
+</div>
+
+</body>
+</html>
