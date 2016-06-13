@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Euros</title>
-    <link rel="stylesheet" href="../static/main.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
         <a href="{% url 'home_view' %}">Home</a> :
-        <a href="{% url 'detailed_info_view' %}">Detailed Info</a>
+        <a href="{% url 'detailed_info_view' %}">Detailed Info</a> :
+        <a href="{% url 'about_me_view' %}">About Me</a>
         <h1></h1>
         {% block content %}
         {% endblock %}

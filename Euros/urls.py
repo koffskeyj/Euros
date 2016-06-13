@@ -20,5 +20,6 @@ from country_facts import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^nations/$', views.detailed_info_view, name="detailed_info_view"),
-    url(r'^home/$', views.home_view, name="home_view")
+    url(r'^home/$', views.home_view, name="home_view"),
+    url(r'^aboutme/$', views.about_me_view, name="about_me_view")
 ]
